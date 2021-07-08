@@ -3,8 +3,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RegisterPerson.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +33,7 @@ namespace RegisterPerson
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionDB")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -56,7 +59,7 @@ namespace RegisterPerson
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Persons}/{action=Index}/{id?}");
             });
         }
     }
