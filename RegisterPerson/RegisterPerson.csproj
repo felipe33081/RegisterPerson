@@ -30,4 +30,58 @@
     <Folder Include="Migrations\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Bootstrap\bootbox\bootbox.min.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-admin-lte\app.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-admin-lte\app.min.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-date-range-picker\daterangepicker.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-date-range-picker\moment.min.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-datepicker\bootstrap-datepicker.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-datepicker\bootstrap-datepicker.min.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-datepicker\locates\bootstrap-datepicker.pt-BR.min.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-notify\bootstrap-notify.min.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-select\bootstrap-select.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-select\bootstrap-select.js.map" />
+    <None Include="wwwroot\Bootstrap\bootstrap-select\bootstrap-select.min.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-select\i18n\defaults-pt_BR.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-select\i18n\defaults-pt_BR.min.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-touchspin\jquery.bootstrap-touchspin.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-touchspin\jquery.bootstrap-touchspin.min.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap-validator\validator.min.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap.min.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\affix.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\alert.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\button.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\carousel.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\collapse.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\dropdown.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\modal.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\popover.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\scrollspy.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\tab.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\tooltip.js" />
+    <None Include="wwwroot\Bootstrap\bootstrap\transition.js" />
+    <None Include="wwwroot\jQuery\jquery-3.1.1.min.js" />
+    <None Include="wwwroot\jQuery\jquery-ui.min.js" />
+    <None Include="wwwroot\jQuery\jquery.mask.min.js" />
+    <None Include="wwwroot\jQuery\jquery.maskMoney.min.js" />
+    <None Include="wwwroot\jQuery\jsonify.js" />
+    <None Include="wwwroot\jQuery\responsivemultimenu.js" />
+    <None Include="wwwroot\Utility\accounting.js" />
+    <None Include="wwwroot\Utility\clipboard.min.js" />
+    <None Include="wwwroot\Utility\encryptSensitiveData.js" />
+    <None Include="wwwroot\Utility\input-tag.js" />
+    <None Include="wwwroot\Utility\jquery.mask.js" />
+    <None Include="wwwroot\Utility\jsencrypt.min.js" />
+    <None Include="wwwroot\Utility\knockout.js" />
+    <None Include="wwwroot\Utility\moment.min.js" />
+    <None Include="wwwroot\Utility\navigation.js" />
+    <None Include="wwwroot\Utility\p-loading.js" />
+    <None Include="wwwroot\Utility\p-loading.min.js" />
+    <None Include="wwwroot\Utility\select2.full.min.js" />
+    <None Include="wwwroot\Utility\select2\i18n\pt-BR.js" />
+    <None Include="wwwroot\Utility\utility.js" />
+  </ItemGroup>
+
 </Project>

@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Painel Administrativo</h2>
 
 <p>
     <a asp-action="CreatePerson">Cadastrar Pessoa</a>
@@ -16,7 +16,7 @@
                 @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SurName)
+                @Html.DisplayNameFor(model => model.Surname)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.SocialSecurity)
@@ -38,7 +38,7 @@
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.SurName)
+                    @Html.DisplayFor(modelItem => item.Surname)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.SocialSecurity)

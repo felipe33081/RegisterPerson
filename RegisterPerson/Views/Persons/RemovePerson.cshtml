@@ -18,10 +18,10 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.SurName)
+            @Html.DisplayNameFor(model => model.Surname)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.SurName)
+            @Html.DisplayFor(model => model.Surname)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.SocialSecurity)
@@ -43,9 +43,9 @@
         </dd>
     </dl>
     
-    <form asp-action="RemovePerson">
+    <form class="form-group" asp-action="RemovePerson">
         <input type="hidden" asp-for="PersonId" />
-        <input type="submit" value="Delete" class="btn btn-default" />
+        <input type="submit" value="Deletar" class="btn btn-default" />
     </form>
 </div>
 
