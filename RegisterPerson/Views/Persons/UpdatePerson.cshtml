@@ -1,7 +1,7 @@
 ﻿@model RegisterPerson.Models.Person
 
 @{
-    ViewData["Title"] = "UpdatePerson";
+    ViewData["Title"] = "Atualizar Pessoa";
 }
 
 <h2>Atualizar Pessoa</h2>
@@ -46,7 +46,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    @Html.ActionLink("Back to List", "Index")
 </div>
 
 @section Scripts {

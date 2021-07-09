@@ -10,19 +10,19 @@ namespace RegisterPerson.Models
     {
         public int PersonId { get; set; }
 
-        [Required(ErrorMessage = "Nome Obrigatório")]
+        [Required(ErrorMessage = "Campo Nome Obrigatório")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Sobrenome Obrigatório")]
+        [Required(ErrorMessage = "Campo Sobrenome Obrigatório")]
         public string Surname { get; set; }
         
-        [Required(ErrorMessage = "CPF Obrigatório")]
+        [Required(ErrorMessage = "Campo CPF Obrigatório")]
         public string SocialSecurity { get; set; }
 
-        [Required(ErrorMessage = "Idade Obrigatório")]
+        [Required(ErrorMessage = "Campo Idade Obrigatório")]
         public int Age { get; set; }
         
-        [Required(ErrorMessage = "CPF Obrigatório")]
+        [Required(ErrorMessage = "Campo Telefone Obrigatório")]
         public string PhoneNumber { get; set; }
     }
 }

@@ -1,25 +1,13 @@
 ﻿@model RegisterPerson.Models.Person
 
 @{
-    ViewData["Title"] = "CreatePerson";
+    ViewData["Title"] = "Criar Pessoa";
 }
 
 <script src="~/js/site.js"></script>
-<script src="~Utility/utility.js"></script>
-<script src="~/Bootstrap/bootstrap-select/bootstrap-select.min.js"></script>
-<script src="~/jQuery/jquery-3.1.1.min.js"></script>
-<script src="~/jQuery/jquery.mask.min.js"></script>
-<script src="~/Bootstrap/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-<script src="~/Bootstrap/bootstrap-datepicker/locates/bootstrap-datepicker.pt-BR.min.js"></script>
-<script src="~/Bootstrap/bootstrap-date-range-picker/moment.min.js"></script>
-<script>
-    $('#socialSecurity').mask('000.000.000-00');
-</script>
-
 
 <h2>Criar Pessoa</h2>
 
-<h4>Pessoa</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -27,29 +15,30 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label">Nome</label>
-                <input asp-for="Name" class="form-control" placeholder="Nome" maxlength="30"/>
+                <input asp-for="Name" class="form-control" placeholder="Nome" maxlength="30" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Surname" class="control-label">Sobrenome</label>
-                <input asp-for="Surname" class="form-control" placeholder="Sobrenome" maxlength="30"/>
+                <input asp-for="Surname" class="form-control" placeholder="Sobrenome" maxlength="30" />
                 <span asp-validation-for="Surname" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="SocialSecurity" class="control-label">CPF</label>
-                <input asp-for="SocialSecurity" class="form-control" id="socialSecurity" placeholder="000.000.000-00"/>
+                <input asp-for="SocialSecurity" class="form-control" placeholder="000.000.000-00" maxlength="14" />
                 <span asp-validation-for="SocialSecurity" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Age" class="control-label">Idade</label>
-                <input asp-for="Age" class="form-control" placeholder="00" maxlength="2"/>
+                <input asp-for="Age" class="form-control" placeholder="00" maxlength="2" />
                 <span asp-validation-for="Age" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PhoneNumber" class="control-label">Telefone</label>
-                <input asp-for="PhoneNumber" class="form-control" id="phoneNumber" placeholder="(00) 00000-0000"/>
+                <input asp-for="PhoneNumber" class="form-control" placeholder="(00) 00000-0000" maxlength="15" />
                 <span asp-validation-for="PhoneNumber" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <input type="submit" value="Criar" class="btn btn-default" />
             </div>
@@ -58,8 +47,29 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    @Html.ActionLink("Back to List", "Index")
 </div>
+
+<environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</environment>
+<environment exclude="Development">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery"
+            crossorigin="anonymous"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+            crossorigin="anonymous"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
+    </script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+</environment>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
